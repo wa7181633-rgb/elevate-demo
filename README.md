@@ -15,8 +15,8 @@ This is a real example of the quality of work I deliver to clients:
 - Fully responsive (mobile-first)
 - Zero dependencies (pure HTML, CSS, vanilla JS)
 - Fast Core Web Vitals
-- SEO basics included (title, meta, Open Graph ready)
-- Accessible structure
+- SEO foundations: canonical URL, Open Graph, Twitter cards, robots.txt and sitemap.xml
+- Accessibility improvements: skip link, visible keyboard focus and reduced-motion support
 
 You can use this as a reference when talking to potential clients:
 
@@ -53,14 +53,14 @@ https://wa7181633-rgb.github.io/elevate-demo/
 
 1. Clone or download the repo
 2. Open `index.html` in a browser (no build step)
-3. Edit the copy, prices, WhatsApp number and contact details
+3. Edit the copy, prices, WhatsApp number and contact details. The contact form currently opens WhatsApp with a prefilled message; visitors must press Send in WhatsApp.
 4. Deploy to GitHub Pages, Netlify, Vercel or any static host
 
 ### Key files
 
 - `index.html` – all content
 - `styles.css` – complete styling (CSS variables at the top)
-- `script.js` – mobile menu, form feedback, light scroll animations
+- `script.js` – mobile menu, WhatsApp enquiry handoff and light scroll animations
 
 ### Quick customizations
 
@@ -69,6 +69,13 @@ https://wa7181633-rgb.github.io/elevate-demo/
 - **Pricing & packages**: edit the three cards in the Services and Pricing sections
 
 ---
+
+## Important before publishing
+
+- Replace all sample testimonials and performance figures with genuine, permissioned client evidence.
+- Replace the demo coaching copy, packages, prices and contact details with the real business information.
+- The contact form uses the WhatsApp number in `script.js`; update it there and in `index.html` if the business number changes.
+- This is a static demo. It does not store enquiries in a database or send email automatically.
 
 ## Tech stack
 
