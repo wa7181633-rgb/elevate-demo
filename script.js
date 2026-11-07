@@ -34,23 +34,34 @@
     onScroll();
   }
 
-  // Simple form handler (demo only – shows success message)
+  // Send the validated enquiry to WhatsApp with a prefilled message.
+  // The visitor reviews and sends it inside WhatsApp; no data is silently submitted.
   const form = document.getElementById("contactForm");
   if (form) {
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const btn = form.querySelector('button[type="submit"]');
-      const original = btn.textContent;
-      btn.textContent = "Message sent ✓";
-      btn.disabled = true;
-      btn.style.background = "#34d399";
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
 
-      setTimeout(() => {
-        btn.textContent = original;
-        btn.disabled = false;
-        btn.style.background = "";
-        form.reset();
-      }, 2800);
+      if (!form.reportValidity()) return;
+
+      const data = new FormData(form);
+      const name = String(data.get("name") || "").trim();
+      const email = String(data.get("email") || "").trim();
+      const message = String(data.get("message") || "").trim();
+      const text = [
+        "Hello, I would like to book a strategy call.",
+        "",
+        "Name: " + name,
+        "Email: " + email,
+        "Project details: " + message
+      ].join("\\n");
+      const whatsappUrl = "https://wa.me/923122581354?text=" + encodeURIComponent(text);
+      const status = document.getElementById("formStatus");
+
+      if (status) {
+        status.textContent = "WhatsApp is opening with your message. Review it there and press Send to submit.";
+      }
+
+      window.open(whatsappUrl, "_blank", "noopener,noreferrer");
     });
   }
 
