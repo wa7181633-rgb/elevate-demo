@@ -4,6 +4,16 @@
 
 A conversion-focused, agency-grade one-page website designed for coaches, consultants and high-ticket service businesses.
 
+<p align="left">
+  <a href="https://wa7181633-rgb.github.io/elevate-demo/"><img alt="Live Demo" src="https://img.shields.io/badge/Live%20Demo-Open-22d3ee?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-22d3ee?style=flat-square" />
+  <img alt="Zero deps" src="https://img.shields.io/badge/dependencies-0-34d399?style=flat-square" />
+</p>
+
+**Live Demo:** https://wa7181633-rgb.github.io/elevate-demo/
+
+*(If the link does not open yet, go to repo Settings → Pages → Source: Deploy from branch `main` / root)*
+
 ---
 
 ## Why this exists
@@ -21,16 +31,6 @@ This is a real example of the quality of work I deliver to clients:
 You can use this as a reference when talking to potential clients:
 
 > “This is the level of polish and conversion focus you get.”
-
----
-
-## Live Demo
-
-After enabling GitHub Pages (Settings → Pages → Deploy from branch `main`):
-
-```
-https://wa7181633-rgb.github.io/elevate-demo/
-```
 
 ---
 
@@ -65,7 +65,7 @@ https://wa7181633-rgb.github.io/elevate-demo/
 ### Quick customizations
 
 - **Colors**: change the CSS variables in `:root` inside `styles.css`
-- **WhatsApp number**: search for `wa.me/` in `index.html`
+- **WhatsApp number**: search for `wa.me/` in `index.html` and `script.js`
 - **Pricing & packages**: edit the three cards in the Services and Pricing sections
 
 ---
@@ -86,9 +86,23 @@ https://wa7181633-rgb.github.io/elevate-demo/
 
 ---
 
+## Want a site like this for your business?
+
+Fixed price. Fixed timeline. You own the code.
+
+| Package | Price | Timeline |
+|---------|-------|----------|
+| Starter landing page | **$149** | 5 days |
+| Business (up to 5 pages) | **$349** | 10 days |
+| Custom / AI features | from **$499** | scoped |
+
+→ [**WhatsApp me**](https://wa.me/923122581354) · [Portfolio](https://wa7181633-rgb.github.io/farmoz-site/) · farmoz98@gmail.com
+
+---
+
 ## License
 
-Free to use as a portfolio piece or starting point for client work.  
+MIT License — free to use as a portfolio piece or starting point for client work.  
 Attribution to Farmoz appreciated but not required.
 
 ---
