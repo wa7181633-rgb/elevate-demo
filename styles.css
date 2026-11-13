@@ -941,3 +941,44 @@ textarea {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+
+/* Accessibility and form feedback improvements */
+:focus-visible {
+  outline: 3px solid var(--accent-hover);
+  outline-offset: 3px;
+}
+
+.form-help,
+.form-status,
+.demo-disclaimer {
+  max-width: 480px;
+  margin: 0 auto 1rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.form-status {
+  margin: 0.85rem auto 0;
+  color: var(--success);
+  text-align: center;
+}
+
+.demo-disclaimer {
+  max-width: 720px;
+  margin: -1.5rem auto 2rem;
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
